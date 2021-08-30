@@ -88,13 +88,13 @@ There's [a whole tutorial](https://docs.opencv.org/4.4.0/d5/dae/tutorial_aruco_d
 
 Once you have 10-20 good images with full corner detection in your `pics_list.xml`, it's time to do some final tuning.
 
-Measure the square side length of your charuco board as accuratly as you can.
+Measure the square side length of your charuco board as accuratly as you can. These are the full black squares, and the value will be set via 'square_side_length'.
 If your paper is even slightly wrinkled, remember that each square will appear shortened by that if you measure across several squares at once.
 We don't want to include the losses from paper wrinkling in our measurement, we want the real width of a stretched square.
 Also, squares will have different widths on different portions of your paper (unless your printer is really high-end),
 so measure several times on different parts of the paper, and use the average of your measured values.
 
-In a similar fashion, measure the side lengths of the aruco markers.
+In a similar fashion, measure the side lengths of the aruco markers. These are the smaller, patterned squares, and the value will be set via 'marker_side_lenght'. 
 Getting the aruco size really accurate is less important than getting the square size right.
 Focus your effort on the square size.
 
